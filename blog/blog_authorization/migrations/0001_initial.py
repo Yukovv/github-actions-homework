@@ -17,7 +17,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='UserProfile',
             fields=[
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, serialize=False, to=settings.AUTH_USER_MODEL)),
+                ('user',
+                    models.OneToOneField(on_delete=django.db.models.deletion.CASCADE,
+                                         primary_key=True, serialize=False,
+                                         to=settings.AUTH_USER_MODEL)),
                 ('bio', models.TextField(blank=True, max_length=300)),
             ],
         ),
