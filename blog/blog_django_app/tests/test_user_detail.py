@@ -1,8 +1,8 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from blog.blog_authorization.models import UserModel
-from blog.blog_django_app.models import Post
+from blog_authorization.models import UserModel
+from blog_django_app.models import Post
 
 
 class UserDetailTest(TestCase):
