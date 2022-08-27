@@ -3,7 +3,7 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-from blog_authorization.models import UserModel
+from blog.blog_authorization.models import UserModel
 
 
 class UserRegisterTest(TestCase):
